@@ -9,7 +9,7 @@ class CMain {
     this.games.forEach((game) => {
       const link = document.createElement("a")
       link.textContent = game.id + 1
-      link.href = `game/${game.route}`
+      link.href = `game.html?id=${game.id}`
       link.dataset.id = game.id
       mainElement.appendChild(link)
     })
